@@ -5,68 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto de Análise de Licitações Culturais</title>
     <style>
-        /* Estilos para a navbar */
+        /* Estilos para a nav bar */
         .navbar {
-            overflow: hidden;
+            height: 100%;
+            width: 200px; /* largura da nav bar */
+            position: fixed;
+            top: 0;
+            left: 0;
             background-color: #333;
+            padding-top: 20px;
         }
 
         .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 20px;
+            padding: 10px 15px;
             text-decoration: none;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: #f2f2f2;
-            padding: 14px 20px;
-            background-color: inherit;
-            margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: #555;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 160px;
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: #f2f2f2;
-            padding: 12px 16px;
-            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
             display: block;
-            text-align: left;
         }
 
-        .dropdown-content a:hover {
+        .navbar a:hover {
             background-color: #555;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
         }
 
         /* Estilos para o conteúdo */
         .content {
+            margin-left: 220px; /* ajuste para deixar espaço para a nav bar */
             padding: 20px;
+        }
+
+        /* Estilos para o cabeçalho */
+        h1 {
+            margin-top: 0;
         }
 
         /* Estilos para as imagens dos desenvolvedores */
@@ -80,14 +50,9 @@
 
 <div class="navbar">
     <a href="#home">Início</a>
-    <div class="dropdown">
-        <button class="dropbtn">Sprints</button>
-        <div class="dropdown-content">
-            <a href="#sprint1">Sprint 1</a>
-            <a href="#sprint2">Sprint 2</a>
-            <a href="#sprint3">Sprint 3</a>
-        </div>
-    </div>
+    <a href="#sprint1">Sprint 1</a>
+    <a href="#sprint2">Sprint 2</a>
+    <a href="#sprint3">Sprint 3</a>
 </div>
 
 <div class="content">
